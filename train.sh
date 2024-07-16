@@ -1,0 +1,1 @@
+PYTHONPATH=$PYTHONPATH:~/interbotix_ws/src/aloha/:~/interbotix_ws/src/aloha/aloha_scripts python imitate_episodes.py --task_name take_transfer_put --ckpt_dir /home/citydeer/ubuntu-20.04/aloha/ckpt/take_transfer_put --policy_class ACT --kl_weight 10 --chunk_size 100 --hidden_dim 512 --batch_size 8 --dim_feedforward 3200 --num_epochs 2000 --lr 1e-5 --seed 0
