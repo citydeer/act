@@ -328,6 +328,23 @@ def train_bc(train_dataloader, val_dataloader, config):
 
     set_seed(seed)
 
+    # print(f'Train batch: {len(train_dataloader)} Val batch: {len(val_dataloader)}')
+    # print(f'==================================== Train ==================')
+    # for data in train_dataloader:
+    #     print(f'Data[0] shape: {data[0].shape}')
+    #     print(f'Data[1] shape: {data[0].shape}')
+    #     print(f'Data[2] shape: {data[0].shape}')
+    #     print(f'Data[3] shape: {data[0].shape}')
+    
+    # print(f'==================================== Val ==================')
+    # for data in val_dataloader:
+    #     print(f'Data[0] shape: {data[0].shape}')
+    #     print(f'Data[1] shape: {data[0].shape}')
+    #     print(f'Data[2] shape: {data[0].shape}')
+    #     print(f'Data[3] shape: {data[0].shape}')
+    
+    # exit()
+
     policy = make_policy(policy_class, policy_config)
     policy.cuda()
     optimizer = make_optimizer(policy_class, policy)
